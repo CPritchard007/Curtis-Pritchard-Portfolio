@@ -8,13 +8,15 @@ import {MatButtonModule, MatIconModule, MatMenuModule} from '@angular/material';
 import {MenuComponent} from './menu/menu.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { InterestsComponent } from './interests/interests.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     AboutMeComponent,
-    InterestsComponent
+    InterestsComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,

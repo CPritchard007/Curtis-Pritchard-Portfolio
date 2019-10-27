@@ -25,7 +25,7 @@ $primary :#1b1b1b;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    margin: 15px 10px 0 0;
+    margin: 15px 0 5px 0;
     width: 700px;
   }
 
@@ -36,3 +36,11 @@ $primary :#1b1b1b;
   margin-top: 100px;
 }
 
+
+app-languages {
+  width: 100vw;
+  background-image: linear-gradient(180deg, #1b1b1b 70%, #535353 90%);
+  height: 100px;
+  display: flex;
+
+}
