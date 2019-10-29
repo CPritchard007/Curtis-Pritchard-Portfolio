@@ -1,8 +1,8 @@
 
-<button mat-flat-button *ngFor="let item of menuItemsList" color="secondary">
+<a mat-flat-button *ngFor="let item of menuItemsList" color="secondary" href="{{item.ref}}">
   {{item.name}}
   <i *ngIf="item.icon" class="material-icons">{{item.icon}}</i>
-</button>
+</a>
 
 
 

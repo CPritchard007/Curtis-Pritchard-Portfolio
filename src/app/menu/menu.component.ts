@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
     this.menuItemsList = [ {
       name: 'About',
       icon: 'face',
-      ref: '#About'
+      ref: '#aboutMe'
     }, {
       name: 'Interests',
       icon: 'color_lens',
@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
     }, {
       name: 'GitHUB',
       icon: '',
-      ref: '#github'
+      ref: '#githHub'
     }, {
        name: 'Contact Me',
         ref: '#contact',

@@ -9,6 +9,7 @@ import {MenuComponent} from './menu/menu.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { InterestsComponent } from './interests/interests.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { GitHubComponent } from './git-hub/git-hub.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LanguagesComponent } from './languages/languages.component';
     MenuComponent,
     AboutMeComponent,
     InterestsComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    GitHubComponent
   ],
   imports: [
     BrowserModule,

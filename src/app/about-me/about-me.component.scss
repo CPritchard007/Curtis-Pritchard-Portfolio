@@ -1,17 +1,23 @@
 #aboutMe {
-  width: 30vw;
+  width: 50vw;
   background-color: #1b1b1b;
-  min-height: 80vh;
   border-radius: 8px;
-
-  h3 {
-    color: #eceff1;
-    font-size: xx-large;
-    margin: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  color: #eceff1;
+  h2 {
+    margin:20px;
   }
 
-  .section{
-    background-color: #eceff1;
+  .section {
+    box-sizing: border-box;
+    margin: 5px 50px;
+      p {
+        text-indent: 20px;
+        margin-right: 10%;
+         text-align: justify;
+      }
   }
+
 
 }
