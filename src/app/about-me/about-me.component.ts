@@ -13,8 +13,10 @@ export class AboutMeComponent implements OnInit {
  messages: Message[]
   constructor() {
    this.messages = [{
-     header: "Curtis Pritchard",
-     message: "message"
+     header: 'Hello! How are you?',
+     message: 'Hello, Im Curtis Pritchard, and I am here to show you why I am exactly what you are looking for as your next employee.' +
+       'I strive as an employee of where ever I am, to be the best I can be (whether it customer service, or assuring your application' +
+       'is done professionally.'
    }];
   }
 
