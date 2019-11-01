@@ -1,9 +1,11 @@
 import {Component, OnInit} from '@angular/core';
+
 export interface MenuItems {
   name: string;
-  icon?: any;
+  icon?: string;
   ref: string;
 }
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -26,16 +28,27 @@ export class MenuComponent implements OnInit {
       ref: '#languages'
     }, {
       name: 'GitHUB',
-      icon: '',
+      icon: '../assets/menu-icons/github-face.svg',
       ref: '#githHub'
     }, {
        name: 'Contact Me',
         ref: '#contact',
        icon: 'phone'
       }];
+
   }
 
   ngOnInit() {
   }
 
+  getTypeOf(icon: string) {
+    if (icon.includes('.')) {
+      console.log(icon);
+      return 'image';
+    } else {
+      console.log('material')
+      return 'material';
+
+    }
+  }
 }

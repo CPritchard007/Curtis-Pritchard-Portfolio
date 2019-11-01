@@ -2,18 +2,10 @@
 $bg_primary: #444545;
 $bg_secondary: #262626;
 /* You can add global styles to this file, and also import other style files */
-::-webkit-scrollbar {
-width: 12px;
-  background-color: #272727;
-  border: #1b1b1b 2px solid;
-}
-::-webkit-scrollbar-track {
 
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  border: black solid 2px;
-  background-image: linear-gradient(170deg, #7a7a7a 60%, #404040 90%);
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -21,6 +13,7 @@ body{
   padding: 0;
   width: 100vw;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 html {
   background:
@@ -29,5 +22,6 @@ html {
   background-color:$bg_primary;
   background-size: 64px 128px;
   height: 70%;
+
 }
 

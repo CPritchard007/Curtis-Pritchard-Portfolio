@@ -1,7 +1,8 @@
 
-<a mat-flat-button *ngFor="let item of menuItemsList" color="secondary" href="{{item.ref}}">
-  {{item.name}}
-  <i *ngIf="item.icon" class="material-icons">{{item.icon}}</i>
+<a [ngSwitch]="getTypeOf(item.icon)" mat-flat-button *ngFor="let item of menuItemsList" href="{{item.ref}}">
+  <span *ngIf="true">{{item.name}}</span>
+  <i *ngSwitchCase="'material'" class="material-icons">{{item.icon}}</i>
+  <img *ngSwitchCase="'image'" src="{{item.icon}}"/>
 </a>
 
 
