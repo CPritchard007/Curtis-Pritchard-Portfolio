@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GithubService} from '../github.service';
 interface GitHubRepo {
   name: string;
   description: string;
@@ -13,6 +14,11 @@ interface GitHubRepo {
 })
 export class GitHubComponent {
   gitHUBRepos: GitHubRepo[];
-  constructor(){this.gitHUBRepos = [];}
+  constructor(private github: GithubService) {
+    this.getData();
+  }
+  getData(): void {
+    console.log(this.github.getData());
+  }
 }
 

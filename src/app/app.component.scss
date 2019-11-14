@@ -17,12 +17,22 @@
     float: right;
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 700px;
     height: 40px;
     margin-top: 6px;
     margin-right: 10px;
   }
 
+}
+
+@media only screen and (max-width: 1200px) {
+  h2 {
+    color: aqua;
+  }
+
+  #menu app-menu {
+    width: 60%;
+  }
 }
 
 
