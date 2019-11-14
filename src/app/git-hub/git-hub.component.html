@@ -1,0 +1,11 @@
+<mat-card *ngFor="let item of getSortedData().reverse()">
+  <mat-card-header>
+    <h3>{{item.name}}</h3>
+  </mat-card-header>
+
+  <p *ngIf="item.description != null ">{{item.description}}</p>
+  <mat-card-footer>
+  <P>{{item.last_commit | date: "MMMM dd, y"}}</P>
+  </mat-card-footer>
+</mat-card>
+

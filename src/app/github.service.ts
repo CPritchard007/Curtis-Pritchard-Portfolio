@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
 import {GithubItem} from './git-hub/githubItems';
 
 @Injectable({
@@ -13,16 +12,24 @@ export class GithubService {
   url = 'https://api.github.com/users/Cpritchard007/repos';
   getData(): GithubItem [] {
     this.gitRepos = [];
-
     this.http.jsonp(this.url, 'callback').subscribe( e => {
+      // @ts-ignore
       e.data.forEach(item => {
-        console.log(item);
         this.gitRepos.push({
           name: item.name,
           description: item.description,
-          url: item.url
+          url: item.url,
+          last_commit: new Date(item.updated_at)
         });
       });
+    });
+    return this.gitRepos;
+  }
+
+  getDebugData(): void {
+    this.http.jsonp(this.url, 'callback').subscribe( e => {
+      // @ts-ignore
+      console.log(e);
     });
   }
 }

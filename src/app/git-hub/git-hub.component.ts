@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import {GithubService} from '../github.service';
-interface GitHubRepo {
-  name: string;
-  description: string;
-  language: string;
-  url: string;
-  pushed_at: Date;
-}
+import {GithubItem} from './githubItems';
+
 @Component({
   selector: 'app-git-hub',
   templateUrl: './git-hub.component.html',
   styleUrls: ['./git-hub.component.scss']
 })
 export class GitHubComponent {
-  gitHUBRepos: GitHubRepo[];
+  private gitHUBRepos: GithubItem[];
+
   constructor(private github: GithubService) {
-    this.getData();
+    this.gitHUBRepos = this.github.getData();
+    console.log(this.gitHUBRepos);
+    this.github.getDebugData();
   }
-  getData(): void {
-    console.log(this.github.getData());
+  getSortedData(): GithubItem[] {
+
+    return this.gitHUBRepos.sort((a, b) => b.last_commit.getDate() - a.last_commit.getDate());
   }
 }
+
 
