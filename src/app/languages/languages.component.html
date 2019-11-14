@@ -1,1 +1,3 @@
-<img *ngFor="let language of languages" src="{{language.icon}}" alt="{{language.name}}" />
+<ul>
+  <li *ngFor="let item of languages"><img src="{{item.icon}}"/>{{item.name}}</li>
+</ul>

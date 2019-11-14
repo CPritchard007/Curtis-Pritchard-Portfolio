@@ -1,5 +1,5 @@
 
-$bg_primary: #444545;
+$bg_primary: #f8f9f9;
 $bg_secondary: #262626;
 /* You can add global styles to this file, and also import other style files */
 
@@ -9,16 +9,13 @@ $bg_secondary: #262626;
 }
 
 body{
-  margin: 0;
-  padding: 0;
+  margin-top: 80px;
   width: 100vw;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
 }
 html {
-  background:
-    linear-gradient(135deg, $bg_primary 21px, $bg_secondary 22px, $bg_secondary 24px, transparent 24px, transparent 67px, $bg_secondary 67px, $bg_secondary 69px, transparent 69px),
-    linear-gradient(225deg, $bg_primary 21px, $bg_secondary 22px, $bg_primary 24px, transparent 24px, transparent 67px, $bg_secondary 67px, $bg_secondary 69px, transparent 69px)0 64px;
+
   background-color:$bg_primary;
   background-size: 64px 128px;
   height: 70%;

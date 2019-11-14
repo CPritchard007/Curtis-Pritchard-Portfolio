@@ -1,26 +1,22 @@
+.container {
+  margin: 20vh 20% 0;
+  line-height: 40px;
+  font-size: 30px;
 
-h2{
-  min-width: 100px;
-  margin: 50px 0 25px 0;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 20px 0;
-  background-color: ghostwhite;
+  h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #262626;
+    font-size: larger
 
-}
+  }
 
-h3 {
-  margin: 0 0 10px 20px;
+  p {
+    margin: 0 5%;
+    font-size: 20px;
+  }
 
-}
-div.section{
-  width: 100%;
-  color: ghostwhite;
-
-}
-
-p {
-  background-color: #262626;
-  padding: 15px 10px;
-  border-radius: 25px;
+  .section + .section {
+    margin-top: 50px;
+  }
 }
