@@ -24,14 +24,16 @@
   }
 
 }
-
+app-about-me, app-interests, app-git-hub, app-languages, app-milestone-projets {
+  display: block;
+}
 @media only screen and (max-width: 1200px) {
   h2 {
     color: aqua;
   }
 
   #menu app-menu {
-    width: 60%;
+    width: 50%;
   }
 }
 

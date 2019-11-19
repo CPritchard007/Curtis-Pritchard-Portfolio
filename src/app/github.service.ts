@@ -26,10 +26,4 @@ export class GithubService {
     return this.gitRepos;
   }
 
-  getDebugData(): void {
-    this.http.jsonp(this.url, 'callback').subscribe( e => {
-      // @ts-ignore
-      console.log(e);
-    });
-  }
 }

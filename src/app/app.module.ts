@@ -11,6 +11,7 @@ import { InterestsComponent } from './interests/interests.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { GitHubComponent } from './git-hub/git-hub.component';
 import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
+import { MilestoneProjetsComponent } from './milestone-projets/milestone-projets.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
     AboutMeComponent,
     InterestsComponent,
     LanguagesComponent,
-    GitHubComponent
+    GitHubComponent,
+    MilestoneProjetsComponent
   ],
   imports: [
     AppRoutingModule,

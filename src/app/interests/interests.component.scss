@@ -1,20 +1,20 @@
 
 .flowContainer{
-  margin: 100px 15% 0;
+  margin: 100px 10% 0;
   top: 0;
   left: 0;
   background-color: #262626;
   box-sizing: content-box;
   border: #262626 1px solid;
   padding: 10px 10px 0px;
-  height: 35vw;
+  height: 26vw;
 
   .content-container {
     position: relative;
     float: left;
-    width: 25%;
+    width: 20%;
     height: 0;
-    padding-top: 25%;
+    padding-top: 20%;
     div {
       position: absolute;
       top:0;
@@ -31,6 +31,7 @@
     }
 
     .image{
+      background-color: aqua;
 
     }
 

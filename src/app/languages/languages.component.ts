@@ -29,17 +29,11 @@ export class LanguagesComponent implements OnInit {
       name: 'Android',
       icon: '../assets/language-icons/android-original.svg'
     }, {
-      name: 'Angular',
-      icon: '../assets/language-icons/angular-original.svg'
-    }, {
       name: 'CSharp',
       icon: '../assets/language-icons/csharp-original.svg'
     }, {
       name: 'Python',
       icon: '../assets/language-icons/python-original.svg'
-    }, {
-      name: 'Laravel',
-      icon: '../assets/language-icons/laravel-original.svg'
     }, {
       name: 'Swift',
       icon: '../assets/language-icons/swift-original.svg'

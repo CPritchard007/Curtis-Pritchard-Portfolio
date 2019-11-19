@@ -13,7 +13,6 @@ export class GitHubComponent {
   constructor(private github: GithubService) {
     this.gitHUBRepos = this.github.getData();
     console.log(this.gitHUBRepos);
-    this.github.getDebugData();
   }
   getSortedData(): GithubItem[] {
 

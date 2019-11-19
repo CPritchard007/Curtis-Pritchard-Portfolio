@@ -1,5 +1,5 @@
 
-$bg_primary: #f8f9f9;
+$bg_primary: rgba(62, 62, 62, 0.71);
 $bg_secondary: #262626;
 /* You can add global styles to this file, and also import other style files */
 
@@ -9,10 +9,12 @@ $bg_secondary: #262626;
 }
 
 body{
-  margin-top: 80px;
-  width: 100vw;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 65vw;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
+  background-color: white;
 }
 html {
 
