@@ -1,26 +1,31 @@
 @keyframes open_info {
-  from {
+  0% {
     height: 30px;
   }
-  to {
-    height: 90%;
+  60% {
+    border-radius: 0 0 15px 15px;
+  }
+  100% {
+    border-radius: 15px;
+    height: 100%;
   }
 }
 @keyframes display-info {
  from {
-   visibility: visible;
-   height: 0;
+   visibility: hidden;
+   color: white;
  }
   to {
-    height: 83%;
     visibility: visible;
+    color: #262626;
   }
 }
+
 .flexContainer {
   display: flex;
   justify-content: space-evenly;
   flex: 0 0 1;
-
+  flex-wrap: wrap;
   .container {
     position: relative;
     width: 250px;
@@ -33,52 +38,73 @@
     background-size: contain;
     background-repeat: no-repeat;
     h3 {
-      width: 50%;
+      min-width: 50%;
+      max-width: 80%;
       background-color: white;
       border-radius: 20px 0;
       padding: 0 0 0 15px;
+      border: #262626 solid;
+      border-width: 0 2px 2px 0;
     }
     div {
-      height: 30px;
+      box-sizing: border-box;
+      height: 0;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: #262626;
+      background-color: white;
+      border: #262626 solid;
+      border-width: 30px 1px 1px 1px;
       border-radius: 0 0 18px 18px;
-
       p {
         text-wrap: normal;
         text-overflow: ellipsis;
+        overflow-y: auto;
+        text-justify: newspaper;
       }
-
       i {
+        position: absolute;
+        top: -28px;
         color: white;
         width: 100%;
         text-align: center;
       }
     }
-
     div:hover {
       animation-name: open_info;
       animation-fill-mode: forwards;
       animation-duration: 1s;
       animation-delay: 0s;
-
+      animation-timing-function: ease-in-out;
       p {
         position: absolute;
-        top: 20px;
+        top:0;
         left: 0;
+        padding: 0 3px 0;
         width: 98%;
+        height: 100%;
         animation-name: display-info;
-        border-radius: 0 0 20px 20px;
         animation-fill-mode: forwards;
+        border-radius: 0 0 20px 20px;
         animation-duration: 1s;
-        animation-delay: 0s;
+        animation-delay: .8s;
         margin-bottom: 10px;
-        border: #262626 solid 2px;
-        text-overflow: ellipsis;
+        font-size: 18px;
+
+      }
+      p::-webkit-scrollbar {
+        width: 15px;
+        //background-color: #262626;
         background-color: white;
+        border-radius: 0 0 20px 0;
+      }
+      p::-webkit-scrollbar-thumb {
+        border-radius: 25px;
+        width: 100%;
+        background-color: gray;
+        border: white solid 3px;
+        z-index: -1;
       }
     }
   }
@@ -88,9 +114,16 @@
       display: block;
       flex: none;
 
-
       .container {
         margin: 30px auto;
+        width: 300px;
+        height: 180px;
+        h3 {
+
+        }
+        p {
+        }
+
       }
     }
   }

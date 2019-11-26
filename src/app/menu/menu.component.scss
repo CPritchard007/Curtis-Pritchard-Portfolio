@@ -1,5 +1,5 @@
 nav.web {
-  width: 800px;
+  width: 700px;
   ul {
     list-style: none;
     a {
@@ -19,7 +19,7 @@ nav.web {
 nav.mobile {
   display: none;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1030px){
 nav.mobile {
   display: inline-block;
   ul {
