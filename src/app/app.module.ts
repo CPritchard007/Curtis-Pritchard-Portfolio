@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatMenuModule} from '@angular/material';
 import {MenuComponent} from './menu/menu.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { InterestsComponent } from './interests/interests.component';
@@ -33,7 +33,8 @@ import { MilestoneProjetsComponent } from './milestone-projets/milestone-projets
     MatButtonModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

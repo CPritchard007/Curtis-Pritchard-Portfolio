@@ -15,28 +15,32 @@
 
   app-menu {
     float: right;
-    display: flex;
     justify-content: space-between;
-    width: 700px;
     height: 40px;
     margin-top: 6px;
     margin-right: 10px;
   }
 
+
+}
+app-milestone-projects{
+  width: 100%;
 }
 app-about-me, app-interests, app-git-hub, app-languages, app-milestone-projets {
   display: block;
 }
-@media only screen and (max-width: 1200px) {
-  h2 {
-    color: aqua;
+
+
+@media only screen and (max-width: 800px) {
+  #menu {
+    h2 {
+      font-size: 26px;
+    }
   }
 
-  #menu app-menu {
-    width: 50%;
+}
+@media only screen and (max-width: 1008px) {
+  #menu {
+
   }
 }
-
-
-
-

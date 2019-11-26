@@ -1,4 +1,10 @@
-<div class="container">
-  <div *ngFor="let item of milestoneProjects" class="item"><div class="imageContainer"><div class="image" style="background-image: url(../../assets/language-icons/android-original.svg)"><h3>{{item.name}}</h3></div></div><div class="description">{{item.description}}</div><div style="clear: both"></div></div>
+<div class="flexContainer">
+    <div *ngFor="let project of milestoneProjects, first as m" class="container" style="background-image: url('../../assets/language-icons/angular-original.svg')">
+      <h3>{{project.name}}</h3>
+      <div>
+       <i class="material-icons">keyboard_arrow_down</i>
+          <p style="visibility: hidden">{{project.description}}</p>
+     </div>
+    </div>
 </div>
 <div style="clear: both"></div>

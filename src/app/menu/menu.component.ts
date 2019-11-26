@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 export interface MenuItems {
   name: string;
@@ -12,6 +12,7 @@ export interface MenuItems {
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @Input() screenSize: string;
   menuItemsList: MenuItems[];
   constructor() {
     this.menuItemsList = [ {
@@ -19,21 +20,22 @@ export class MenuComponent implements OnInit {
       icon: 'face',
       ref: '#aboutMe'
     }, {
-      name: 'Interests',
-      icon: 'color_lens',
-      ref: '#interests'
-    }, {
       name: 'Languages',
       icon: 'code',
       ref: '#languages'
     }, {
       name: 'GitHUB',
       icon: '../assets/menu-icons/github-face.svg',
-      ref: '#githHub'
+      ref: '#GitHUB'
     }, {
        name: 'Contact Me',
         ref: '#contact',
        icon: 'phone'
+      },
+       {
+        name: 'Milestones',
+        ref: '#Milestone',
+        icon: 'phone'
       }];
 
   }

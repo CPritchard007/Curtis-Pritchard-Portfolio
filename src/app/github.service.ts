@@ -18,7 +18,7 @@ export class GithubService {
         this.gitRepos.push({
           name: item.name,
           description: item.description,
-          url: item.url,
+          url: item.svn_url,
           last_commit: new Date(item.updated_at)
         });
       });

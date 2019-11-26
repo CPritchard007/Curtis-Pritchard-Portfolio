@@ -9,14 +9,12 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   mediaType: string;
   ngOnInit(): void {
-    if(window.innerWidth < 700) {
+    if (window.innerWidth < 800) {
       this.mediaType = 'Mobile';
-    } else if (window.innerWidth < 1000) {
-      this.mediaType = 'smallScreen';
     } else {
-      this.mediaType = 'regularScreen';
+      this.mediaType = 'RegularScreen';
     }
-    console.log(this.mediaType + ", " + window.innerWidth);
+    console.log(this.mediaType);
   }
 }
 

@@ -1,6 +1,22 @@
-mat-card {
-  width: 20%;
-  height: 10vh;
-  float: left;
-  margin: 0 5%;
+ul {
+  li {
+    padding: 8px 10px;
+    display: grid;
+    h3 {
+      width: 100%;
+    }
+    .description {
+      float: left;
+      width: 60%;
+    }
+    .date{
+      float: right;
+      text-align: right;
+      width: 30%;
+    }
+  }
+  .divider{
+    width: 100%;
+    border-bottom: #262626 solid 1px;
+  }
 }

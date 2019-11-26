@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 interface Message {
-  header: string;
+  header?: string;
   message: string;
-  image?:string;
+  image?: string;
 }
 @Component({
   selector: 'app-about-me',
@@ -13,15 +13,13 @@ export class AboutMeComponent implements OnInit {
  messages: Message[];
   constructor() {
    this.messages = [{
-     header: 'Hello! How are you?',
-     message: 'Hello, Im Curtis Pritchard, and I am here to show you why I am exactly what you are looking for as your next employee.' +
-       'I strive as an employee of where ever I am, to be the best I can be (whether it customer service, or assuring your application' +
-       'is done professionally.'
-   },{
-     header: 'Hello! How are you?',
-     message: 'Hello, Im Curtis Pritchard, and I am here to show you why I am exactly what you are looking for as your next employee.' +
-       'I strive as an employee of where ever I am, to be the best I can be (whether it customer service, or assuring your application' +
-       'is done professionally.'
+     header: 'Mobile Applications Developer',
+     message: 'I have been attending a three year course in mobile applications development (attending third year).' +
+       ' I have learned how to develop for many platforms, including IOS, Web, and Android'
+   }, {
+     message: 'my work can be found on GitHub under the username Cpritchard007'
+   }, {
+     message: 'Resume will be provided upon request.'
    }];
   }
 

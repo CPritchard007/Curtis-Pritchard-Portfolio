@@ -1,13 +1,11 @@
-<div id="menu">
+<div *ngIf="mediaType" id="menu">
   <h2>Curtis Pritchard</h2>
-  <app-menu></app-menu>
+  <app-menu [screenSize]="mediaType"></app-menu>
 </div>
 
 <app-about-me id="aboutMe"></app-about-me>
-
-<!--<app-interests id="interests"></app-interests>-->
-<app-milestone-projects></app-milestone-projects>
-<app-git-hub></app-git-hub>
+<app-milestone-projects id="Milestones"></app-milestone-projects>
+<app-git-hub id="GitHUB"></app-git-hub>
 <app-languages id="languages"></app-languages>
 
 

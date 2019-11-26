@@ -1,33 +1,99 @@
-.container {
-  width: 80%;
-  margin: 0 auto;
-  border: #262626 solid 2px;
-  .imageContainer {
+@keyframes open_info {
+  from {
+    height: 30px;
+  }
+  to {
+    height: 90%;
+  }
+}
+@keyframes display-info {
+ from {
+   visibility: visible;
+   height: 0;
+ }
+  to {
+    height: 83%;
+    visibility: visible;
+  }
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0 0 1;
+
+  .container {
     position: relative;
-    width: 15%;
-    height: 0;
-    padding-top: 15%;
-    float: left;
-    border: #262626 solid 3px;
-    .image {
+    width: 250px;
+    border: #262626 solid 2px;
+    border-radius: 20px;
+    margin: 30px 0;
+    height: 160px;
+    background-color: aliceblue;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    h3 {
+      width: 50%;
+      background-color: white;
+      border-radius: 20px 0;
+      padding: 0 0 0 15px;
+    }
+    div {
+      height: 30px;
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      h3{
+      background-color: #262626;
+      border-radius: 0 0 18px 18px;
+
+      p {
+        text-wrap: normal;
+        text-overflow: ellipsis;
+      }
+
+      i {
+        color: white;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    div:hover {
+      animation-name: open_info;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 0s;
+
+      p {
         position: absolute;
-        bottom: 0;
+        top: 20px;
         left: 0;
+        width: 98%;
+        animation-name: display-info;
+        border-radius: 0 0 20px 20px;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        margin-bottom: 10px;
+        border: #262626 solid 2px;
+        text-overflow: ellipsis;
         background-color: white;
       }
     }
   }
-  .description {
-    float: left;
-    width: 70%;
-  }
 }
+  @media only screen and (max-width:550px){
+    .flexContainer {
+      display: block;
+      flex: none;
+
+
+      .container {
+        margin: 30px auto;
+      }
+    }
+  }
+
+
+

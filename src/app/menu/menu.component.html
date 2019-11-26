@@ -1,9 +1,22 @@
 
-<a [ngSwitch]="getTypeOf(item.icon)" mat-flat-button *ngFor="let item of menuItemsList" href="{{item.ref}}">
-  <span>{{item.name}}</span>
-  <i *ngSwitchCase="'material'" class="material-icons">{{item.icon}}</i>
-  <img *ngSwitchCase="'image'" src="{{item.icon}}"/>
-</a>
+  <nav class="web">
+  <ul  *ngFor="let item of menuItemsList">
+    <a [ngSwitch]="getTypeOf(item.icon)" mat-flat-button  href="{{item.ref}}">
+      <span>{{item.name}}</span>
+      <li *ngSwitchCase="'material'"><i class="material-icons">{{item.icon}}</i></li>
+      <li *ngSwitchCase="'image'"><img  src="{{item.icon}}"/></li>
+    </a>
+  </ul>
+  </nav>
 
+  <nav class="mobile">
+    <ul>
+      <li><i class="material-icons">reorder</i>
+        <ul >
+          <li *ngFor="let item of menuItemsList"><a href="{{item.ref}}">{{item.name}}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
 

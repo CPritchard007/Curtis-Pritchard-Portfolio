@@ -1,15 +1,50 @@
-a {
- border-radius: 24px;
-  vertical-align: middle;
-  width: 120px;
+nav.web {
+  width: 800px;
+  ul {
+    list-style: none;
+    a {
+      float: right;
+      width: 130px;
+      padding-right: 30px;
+      border-radius: 20px;
+
+      i, img {
+        position: absolute;
+        top:20%;
+        right: 10%;
+      }
+    }
+  }
 }
+nav.mobile {
+  display: none;
+}
+@media only screen and (max-width: 1200px){
+nav.mobile {
+  display: inline-block;
+  ul {
+    list-style: none;
+    li {
+      text-align: right;
+      i {
+        color: white;
+        font-size: 40px;
+      }
+    }
+    li ul li {
+      background-color: white;
+      display: none;
+      height: 40px;
+      text-align: left;
+      font-size: 20px;
+    }
+    li:hover ul li {
+      display: block;
+    }
+  }
+}
+  nav.web {
+   display: none;
 
-
-@media only screen and (max-width: 1200px) {
- a {
-   flex: 0;
- }
-  span {
-    display: none;
   }
 }

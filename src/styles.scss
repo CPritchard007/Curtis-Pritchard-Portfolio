@@ -11,7 +11,7 @@ $bg_secondary: #262626;
 body{
   padding-top: 20px;
   margin: 0 auto;
-  width: 65vw;
+  max-width: 1080px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
   background-color: white;
@@ -23,4 +23,10 @@ html {
   height: 70%;
 
 }
+@media only screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    font-size: 16px;
 
+  }
+}
